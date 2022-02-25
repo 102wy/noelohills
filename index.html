@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>노엘로힐스</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Swiper 슬라이드 -->
+    <link rel="stylesheet" href="js/swiper/swiper.min.css">
+    <script src="js/swiper/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!-- 딩벳폰트 참조 -->
+    <link rel="stylesheet" href="css/fontello/css/animation.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+</head>
+
+<body>
+    <!-- 모달창 -->
+    <div class="modal">
+        <div class="modal-cont">
+            <p class="modal-txt">
+                본 사이트는 포트폴리오용 사이트로 <br>
+                리소스는 원저작자에게 있습니다.
+            </p>
+            <span class="modal-desc">
+                HTML5, CSS3, javaScript & jQuery로 제작되었으며,<br>
+                크롬에 최적화 되어있습니다.
+            </span>
+            <button class="modal-close">CLOSE</button>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 위로가기 -->
+        <div class="go-top">
+            <a href="#" class="icon-up-open-2"></a>
+        </div>
+
+        <!-- 상단 -->
+        <div class="header">
+            <div class="pagew">
+                <a href="#" class="logo"></a>
+                <div class="gnb">
+                    <ul class="depth1 clearfix">
+                        <li>
+                            <a href="#" class="mainmenu">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mainmenu">Our Story</a>
+                            <ul class="depth2">
+                                <li><a href="#">Our Beginning</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainmenu">Happy Formula</a>
+                            <ul class="depth2  wd-200">
+                                <li><a href="#">Safety & Trust</a></li>
+                                <li><a href="#">Pentacera™️</a></li>
+                                <li><a href="#">Kind Ingredient List</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainmenu">Healthy Care</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mainmenu">Honest Review</a>
+                        </li>
+                        <li>
+                            <a href="#" class="mainmenu">Fun Events</a>
+                            <ul class="depth2">
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Benefits</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navi clearfix">
+                    <a href="#" class="shopping"></a>
+                    <a href="#" class="my-menu"></a>
+                    <a href="#" class="log-in"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 메인 -->
+        <div class="main">
+            <div class="pagew">
+                <div class="swiper-container sw-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="m-slide clearfix">
+                                <div class="m-slide-left">
+                                    <b2>신제품 출시<br>입에 닿아도 안심</b2>
+                                    <span>#100% 식품 그레이드 #안심로션</span>
+                                    <a href="#">Shop now</a>
+                                </div>
+                                <div class="m-slide-right">
+                                    <img src="images/main_1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m-slide clearfix">
+                                <div class="m-slide-left">
+                                    <b2>Baby Skincare<br>Perfected<br>by Experts</b2>
+                                    <span>전문가 지식으로 완성한 유아 스킨케어</span>
+                                    <a href="#">Shop now</a>
+                                </div>
+                                <div class="m-slide-right">
+                                    <img src="images/main_2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="m-slide clearfix">
+                                <div class="m-slide-left">
+                                    <b2>A Belief Based on<br>Knowledge,Conscience<br>and Love</b2>
+                                    <span>지식과 양심, 그리고 사랑에 기반을 둔 신념</span>
+                                    <a href="#">Our Story</a>
+                                </div>
+                                <div class="m-slide-right">
+                                    <img src="images/main_3.png" class="main-img3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination m-navi">
+                        <ul class="clearfix">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 약속 영역 -->
+        <div class="promis">
+            <div class="pagew">
+                <h3 class="promis-tit">our promise</h3>
+                <p class="promis-desc">Safety & Trust</p>
+                <ul class="promis-list clearfix">
+                    <li>
+                        <img src="images/bg-promiss01.png">
+                        <h3>German Dermatest<br>Certified</h3>
+                        <h>독일 더마테스트 완료</h>
+                    </li>
+                    <li>
+                        <img src="images/bg-promiss02.png">
+                        <h3>Skin Irritation<br>Tested</h3>
+                        <h>피부 저자극 테스트 완료</h>
+                    </li>
+                    <li>
+                        <img src="images/bg-promiss03.png">
+                        <h3>Eye Irritation<br>Tested</h3>
+                        <h>안자극 대체 테스트 완료</h>
+                    </li>
+                    <li>
+                        <img src="images/bg-promiss04.png">
+                        <h3>20 Harmful Ingredients<br>Excluded</h3>
+                        <h>유해 우려 성분 20가지 배제</h>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 제품 영역 -->
+        <div class="product">
+            <div class="pagew clearfix">
+                <div class="product-left">
+                    <h3 class="product-tit">OUR PRODUCTS</h3>
+                    <h class="product-desc">Meet Our<br>Essenetials</h>
+                </div>
+                <div class="product-right">
+                    <ul class="product-list clearfix">
+                        <li>
+                            <a href="#" class="product-img"><img src="images/product_1.jpg"></a>
+                            <h3>밀크 에센스 로션 150ml</h3>
+                            <h>100%푸드그레이드 성분<br>입에 닿아도 안심</h>
+                            <h2>45,000원</h2>
+                            <a href="#" class="product-more">See more <img src="images/btn-more-visual.png"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="product-img"><img src="images/product_2.jpg"></a>
+                            <h3>마일드 젤 워시 300ml</h3>
+                            <h>피부를 씻는 동시에 보호하는 워시케어</h>
+                            <h2>35,000원</h2>
+                            <a href="#" class="product-more">See more <img src="images/btn-more-visual.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 안전 영역 -->
+        <div class="safety">
+            <div class="pagew clearfix">
+                <div class="safe-left">
+                    <img src="images/bg-main-info01.png">
+                </div>
+                <div class="safe-right">
+                    <img src="images/main-info-txt011.png" class="safe-tit">
+                    <h3 class="safe-desc">
+                        A Belief Based on Knowledge,<br>
+                        Conscience and Love
+                    </h3>
+                    <h class="safe-cont">
+                        내 아이의 피부에 직접 닿는 제품, 안심할 수 있는 성분으로 만들어,<br>
+                        공신력 있는 기관의 테스트를 통해 제품의 안전성에 대한 관리를 하고 있습니다.
+                    </h>
+                    <a href="#" class="safe-more">Read more <img src="images/btn-read-more.png"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 건강 영역 -->
+        <div class="healthy">
+            <div class="pagew clearfix">
+                <div class="health-left">
+                    <img src="images/main-info-txt021.png" class="health-tit">
+                    <h3 class="health-desc">
+                        Smart Habits for Healthy<br>
+                        Baby Skin
+                    </h3>
+                    <h class="health-cont">
+                        소중하다는 말로도 부족한 우리 아이들에게<br>
+                        최선의 피부관리 솔루션을 전해주기 위해<br>
+                        Noelo Hills의 진지한 고민은 오늘도 멈추지 않습니다.
+                    </h>
+                    <a href="#" class="health-more">Read more <img src="images/btn-read-more.png"></a>
+                </div>
+                <div class="health-right">
+                    <img src="images/bg-main-info02.png">
+                </div>
+            </div>
+        </div>
+        <!-- 스토리 영역 -->
+        <div class="story">
+            <div class="pagew clearfix">
+                <div class="story-left">
+                    <img src="images/bg-main-info03.png">
+                </div>
+                <div class="story-right">
+                    <img src="images/main-info-txt031.png" class="story-tit">
+                    <h3 class="story-desc">
+                        The Beginning of Noelo Hills
+                    </h3>
+                    <h class="story-cont">
+                        우리가 가장 중요하게 여기는 가치는 진정성입니다.<br>
+                        우리가 하는 모든 일, 만드는 모든 제품 그리고 제공하는<br>
+                        모든 정보는 과학, 진실 그리고 양심에 기초합니다.
+                    </h>
+                    <a href="#" class="story-more">Read more <img src="images/btn-read-more.png"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 성분 영역 -->
+        <div class="ingredients">
+            <div class="pagew clearfix">
+                <div class="ingredients-left">
+                    <img src="images/main-info-txt041.png" class="ingredients-tit">
+                    <h3 class="ingredients-desc">
+                        Our Promise to Use<br>
+                        Only the Best Ingredients
+                    </h3>
+                    <h class="ingredients-cont">
+                        내 아이의 피부에 직접 닿는 제품,<br>
+                        아무것이나 사용할 수 없기에 유해 논란이 있는 성분은 최대한<br>
+                        배제하고안심할 수 있는 성분으로 만들었습니다.
+                    </h>
+                    <a href="#" class="ingredients-more">Read more <img src="images/btn-read-more.png"></a>
+                </div>
+                <div class="ingredients-right">
+                    <img src="images/bg-main-info04.png">
+                </div>
+            </div>
+        </div>
+        <!-- 인스타 영역 -->
+        <div class="insta">
+            <div class="pagew">
+                <h3 class="insta-tit">Instagram</h3>
+            </div>
+        </div>
+        <!-- 하단 -->
+        <div class="footer">
+            <div class="pagew">
+                <div class="footer-menu">
+                    <ul class="footer-depth1 clearfix">
+                        <li><a href="#" class="depth1-y">Noelo Hills</a></li>
+                        <li><a href="#">CS Center</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                    <ul class="toggle-menu">
+                        <li>
+                            <span>상호</span>
+                            <p>주식회사 세손</p>
+                        </li>
+                        <li>
+                            <span>대표자명</span>
+                            <p>임정아</p>
+                        </li>
+                        <li>
+                            <span>대표전화번호</span>
+                            <p>1600-6274</p>
+                        </li>
+                        <li>
+                            <span>개인정보관련책임자</span>
+                            <p>임지은(help@seisson.com)</p>
+                        </li>
+                        <br>
+                        <li>
+                            <span>사업장소재지</span>
+                            <p>04322 서울특별시 용산구 한강대로 205 (한강로1가) 용산파크자이 디동 205호</p>
+                        </li>
+                        <li>
+                            <span>사업자등록번호</span>
+                            <p>183-86-01860</p>
+                        </li>
+                        <li>
+                            <span>통신판매업 신고번호</span>
+                            <p>제2021-서울용산-0634호</p>
+                        </li>
+                    </ul>
+                    <span class="copy">
+                        © Copyright Seisson Inc. All rights reserved.
+                    </span>
+                    <a href="#" class="footer-insta">Noelo Hills</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

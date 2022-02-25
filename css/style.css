@@ -1,0 +1,1012 @@
+@charset 'utf-8';
+@import url(notosanskr/stylesheet.css);
+@import url('Quicksand/stylesheet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans KR';
+}
+/* 모달창 */
+.modal {
+    position: fixed;
+    left:  0;
+    top:  0;
+    width:  100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999999999;
+}
+.modal-cont {
+    position: absolute;
+    left:  50%;
+    top:  50%;
+    transform: translate(-50%, -50%);
+    width:  450px;
+    height: 280px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgb(0 0 0 / 50%);
+}
+.modal-txt {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-top: 50px;
+}
+.modal-desc {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 30px;
+}
+.modal-close {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80px;
+    height: 25px;
+    color: #fff;
+    background: #000;
+    border: 0;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+.modal-close:hover {
+    background: #f0b357;
+}
+
+.clearfix:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.pagew {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 위로가기 */
+.go-top {
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s background 0.3s;
+}
+
+.go-top:hover {
+    background: #dd101a;
+}
+
+.go-top-focus {
+    opacity: 1;
+}
+
+.go-top > a {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background: #fff5d6;
+    transition: background 0.3s;
+    z-index: 999999;
+    min-width: 1920px;
+}
+.header-focus {
+    background: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    border-bottom-color: rgb(103,109,114);
+}
+.header > .pagew {
+    width: 1440px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    top: 36px;
+    left: -10px;
+    display: block;
+    width: 180px;
+    height: 68px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: cover;
+
+}
+
+.gnb {
+    position: absolute;
+    top: 56px;
+    left: 253px;
+    display: block;
+    z-index: 999999;
+}
+
+.depth1 {
+    position: relative;
+    display: block;
+}
+
+.depth1 > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 66px;
+}
+
+.mainmenu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.mainmenu:hover {
+    color: #ffcf42;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.depth1 > li > a {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    color: #676d72;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.45px;
+}
+
+.depth2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    width: 150px;
+    height: auto;
+    display: none;
+    background: #fff;
+    border-radius: 30px;
+    padding: 40px 0 40px 0;
+    z-index: -1;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 5%);
+}
+
+.wd-200 {
+    width: 200px;
+
+}
+
+.depth2 > li {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+}
+
+.depth2 > li > a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #676d72;
+    font-family: 'Quicksand';
+    text-align: center;
+}
+
+.depth2 > li > a:hover {
+    font-weight: bold;
+}
+
+.navi {
+    position: absolute;
+    top: 51px;
+    right: 10px;
+    display: block;
+}
+
+.shopping {
+    position: relative;
+    display: block;
+    width: 24px;
+    height: 23px;
+    background: url('../images/ico-cart.png') no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-right: 42px;
+}
+
+.my-menu {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 23px;
+    background: url('../images/ico-user.png') no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-right: 42px;
+}
+
+.log-in {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 20px;
+    background: url('../images/ico-login.png') no-repeat center;
+    background-size: cover;
+    float: left;
+}
+
+/* 메인 */
+.main {
+    position: relative;
+    display: block;
+    background: #fff5d6;
+    padding-top: 140px;
+}
+
+.main > .pagew {
+    padding-top: 60px;
+    padding-bottom: 53px;
+}
+
+.m-slide {
+    position: relative;
+    display: block;
+}
+
+.m-slide-left {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 340px;
+    margin-top: 159px;
+}
+
+.m-slide-left b2 {
+    position: relative;
+    display: block;
+    font-family: ;
+    font-size: 54px;
+    color: #676d72;
+    line-height: 72px;
+}
+
+.m-slide-left span {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    color: #676d72;
+    margin-top: 20px;
+
+}
+
+.m-slide-left a {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    color: #f9ce42;
+    line-height: 26px;
+    margin-top: 40px;
+}
+
+.m-slide-left a:after {
+    content: '';
+    position: absolute;
+    left: 90px;
+    top: 0;
+    display: block;
+    width: 36px;
+    height: 26px;
+    background: url('../images/btn-more-visual.png') no-repeat center;
+    background-size: 100%;
+}
+
+.m-slide-right {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.m-slide-right > img {
+    position: relative;
+    display: block;
+    margin-right: 313px;
+}
+
+.main-img3 {
+    margin-right: 285px !important;
+}
+
+.swiper-pagination {
+    position: relative;
+    display: block;
+    text-align: left;
+    margin-left: 340px;
+    margin-top: 42px;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 4px;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffcf42;
+}
+
+/* 약속 영역 */
+.promis {
+    position: relative;
+    display: block;
+}
+
+.promis > .pagew {
+    padding-top: 94px;
+    padding-bottom: 155px;
+    text-align: center;
+}
+
+.promis-tit {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: #f9ce42;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: 'Quicksand';
+    line-height: 22px;
+    width: 100%;
+}
+
+.promis-desc {
+    position: relative;
+    display: block;
+    font-size: 36px;
+    line-height: 42px;
+    color: #676d72;
+    margin-top: 20px;
+}
+
+.promis-list {
+    position: relative;
+    display: inline-block;
+    margin-top: 75px;
+}
+
+.promis-list > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 90px;
+}
+
+.promis-list > li > img {
+    position: relative;
+    display: block;
+}
+
+.promis-list > li > h3 {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #676d72;
+    margin-top: 20px;
+}
+
+.promis-list > li > h {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+
+/* 제품 영역 */
+.product {
+    position: relative;
+    display: block;
+}
+
+.product > .pagew {
+    padding-left: 348px;
+    padding-bottom: 150px;
+}
+
+.product-left {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.product-tit {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 3px;
+    color: #f9ce42;
+    margin-top: 300px;
+}
+
+.product-desc {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #676d72;
+    margin-top: 15px;
+}
+
+.product-right {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 190px
+}
+
+.product-list {
+    position: relative;
+    display: block;
+}
+
+.product-list > li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 470px;
+    height: 710px;
+    margin-left: 19px;
+    border-radius: 25px;
+    text-align: center;
+    background: #fff5d6;
+}
+
+.product-img > img {
+    position: relative;
+    display: block;
+    width: 470px;
+    height: 470px;
+    border-radius: 20px 20px 0 0;
+}
+
+.product-list > li > h3 {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    color: #676d72;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.product-list > li > h {
+    font-size: 14px;
+    line-height: 22px;
+    color: #676d72;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+
+.product-list > li > h2 {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    color: #676d72;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.product-more {
+    position: relative;
+    display: block;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    font-weight: 700;
+    color: #f9ce42;
+    line-height: 26px;
+}
+
+.product-more > img {
+    position: relative;
+    display: inline-block;
+}
+
+/* 안전 영역 */
+.safety {
+    position: relative;
+    display: block;
+}
+
+.safety > .pagew {
+    margin-bottom: 95px;
+}
+
+.safe-left {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 226px;
+    margin-right: 146px;
+}
+
+.safe-left > img {
+    position: relative;
+    display: block;
+}
+
+.safe-right {
+    position: relative;
+    display: block;
+    float: left;
+    padding-top: 92px;
+}
+
+.safe-tit {
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.safe-desc {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #676d72;
+}
+
+.safe-cont {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -2px;
+    margin-top: 25px;
+    color: #676d72;
+    font-weight: 400;
+}
+
+.safe-more {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    line-height: 26px;
+    margin-top: 30px;
+    color: #676d72;
+}
+
+.safe-more > img {
+    position: relative;
+    display: inline-block;
+}
+
+/* 건강 영역 */
+.healthy {
+    position: relative;
+    display: block;
+}
+
+.healthy > .pagew {
+    padding-bottom: 100px;
+}
+
+.health-left {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 360px;
+}
+
+.health-tit {
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.health-desc {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #676d72;
+}
+
+.health-cont {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1.5px;
+    margin-top: 25px;
+    color: #676d72;
+    font-weight: 400;
+}
+
+.health-more {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    line-height: 26px;
+    margin-top: 30px;
+    color: #676d72;
+}
+
+.health-more > img {
+    position: relative;
+    display: inline-block;
+}
+
+.health-right {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 200px;
+}
+
+.health-right > img {
+    position: relative;
+    display: block;
+}
+
+/* 스토리 영역 */
+.story {
+    position: relative;
+    display: block;
+}
+
+.story > .pagew {
+    padding-bottom: 135px;
+}
+
+.story-left {
+    position: relative;
+    display: block;
+    float: left;
+    margin-left: 226px;
+    margin-right: 146px;
+}
+
+.story-left > img {
+    position: relative;
+    display: block;
+}
+
+.story-right {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.story-tit {
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.story-desc {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #676d72;
+}
+
+.story-cont {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1.5px;
+    margin-top: 25px;
+    color: #676d72;
+    font-weight: 400;
+}
+
+.story-more {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    line-height: 26px;
+    margin-top: 30px;
+    color: #676d72;
+}
+
+.story-more > img {
+    position: relative;
+    display: inline-block;
+}
+
+/* 성분 영역 */
+.ingredients {
+    position: relative;
+    display: block;
+}
+
+.ingredients > .pagew {
+    padding-bottom: 168px;
+}
+
+.ingredients-left {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 360px;
+}
+
+.ingredients-tit {
+    position: relative;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.ingredients-desc {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #676d72;
+}
+
+.ingredients-cont {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -1.5px;
+    margin-top: 25px;
+    color: #676d72;
+    font-weight: 400;
+}
+
+.ingredients-more {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Quicksand';
+    line-height: 26px;
+    margin-top: 30px;
+    color: #676d72;
+}
+
+.ingredients-more > img {
+    position: relative;
+    display: inline-block;
+}
+
+.ingredients-right {
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 370px;
+}
+
+/* 인스타 영역 */
+.insta {
+    position: relative;
+    display: block;
+}
+
+.insta > .pagew {
+    text-align: center;
+    padding-bottom: 153px;
+}
+
+.insta-tit {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: #676d72;
+    line-height: 42px;
+}
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+    background: #f9f9f9;
+}
+
+.footer > .pagew {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer-menu {
+    position: relative;
+    display: block;
+}
+
+.footer-depth1 {
+    position: relative;
+    display: block;
+}
+
+.footer-depth1 > li {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 60px;
+}
+
+.footer-depth1 > li > a {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'Quicksand';
+    float: left;
+    color: #676d72;
+}
+
+.depth1-y {
+    color: #f9ce42 !important;
+}
+
+.depth1-y:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    background: url('../images/ico-info-btn.png') no-repeat;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.footer-focus:after {
+    background: url('../images/ico-info-btn-close.png') no-repeat;
+}
+.toggle-menu {
+    position: relative;
+    display: none;
+    padding-top: 30px;
+}
+.toggle-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+    line-height: 2.4;
+}
+.toggle-menu > li > span {
+    position: relative;
+    display: inline-block;
+    color: #7e868c;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    padding-right: 20px;
+}
+.toggle-menu > li > p {
+    position: relative;
+    display: inline-block;
+    color: #676d72;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+.copy {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 1;
+    color: #676d72;
+    margin-top: 30px;
+}
+
+.footer-insta {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'Quicksand';
+    color: #676d72;
+}
+
+.footer-insta:before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: -4px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/ico_instagram.png') no-repeat center;
+}
